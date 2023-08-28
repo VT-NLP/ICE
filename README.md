@@ -39,6 +39,7 @@ pip install -r requirements.txt
 ./data/{DATASET_NAME}/{DATASET_SPLIT}.jsonl
 ```
 - Here `DATASET_NAME = {MAVEN, ACE, FewNERD, TACRED}, DATASET_SPLIT = {train, dev, test}`. Please make sure you have downloaded the files on all three splits. Also note that you need to preprocess the ACE dataset into the same format as MAVEN.
+- Here's the [Google Drive link](https://drive.google.com/drive/folders/1nbQLBXMq6rfat7GAkGml_Wli9CyOtWWb?usp=sharing) for the preprocessed datasets (MAVEN, FewNERD, TACRED). Please strictly follow the original license of these datasets when you used them. Note that we cannot release the processed file for ACE dataset due to license constraint, but you can process the data in the same way as other datasets.
 - Then run the following script to compute and store the contextualized BERT features for each dataset:
 ```
 python gen_pretrain_feature.py
